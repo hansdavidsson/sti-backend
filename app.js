@@ -24,9 +24,9 @@ app.get("/football", (req ,res)=>{
     headers={"http_status":200, "cache-control": "no-cache"}
     body=
     [
-        {
+      {
             "name": "AIK",
-            "points": 9,
+            "points": 0,
             "logo":"https://www.allsvenskan.se/lagen/aik/_/image/0c02711d-d44e-4124-a555-0df3d8264551:0fb201f22e823629dada3ee33327a5b70963120b/width-110/AIK.svg"
       },
       {
@@ -43,7 +43,13 @@ app.get("/football", (req ,res)=>{
             "name": "Degerfors IF",
             "points": 3,
             "logo":"https://www.allsvenskan.se/lagen/bk-hacken/_/image/e58c3846-9f1a-4bde-9ccb-99df65cc5360:c14b6bb4bc1d5954b698254ffed2e5a4593a1b6b/width-110/Degerfors%20IF.svg"
+      },
+      {
+            "name": "Hammarby IF",
+            "points": 9,
+            "logo":"https://www.allsvenskan.se/lagen/hammarby-if/_/image/2d712890-bb18-4855-92fa-c8fdaae520ad:c18dd882a8d722f14665b054d25483089cf57a12/width-110/Hammarby.svg"
       }
+
    ]
 
    res.set('Content-Type', 'application/json');
